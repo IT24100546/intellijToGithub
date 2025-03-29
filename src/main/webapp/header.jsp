@@ -6,11 +6,14 @@
     <title>Vehicle Parking System</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Alpine.js for the Image Slider -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
 </head>
 <body>
 
 <!-- Navigation Bar -->
-<header class="bg-blue-600 text-white">
+<header class="bg-red-800 text-white">
     <div class="container mx-auto flex justify-between items-center p-4">
 
         <!-- Logo and Website Name -->
