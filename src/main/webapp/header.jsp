@@ -9,6 +9,8 @@
     <!-- Alpine.js for the Image Slider -->
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
+
+
 </head>
 <body>
 
@@ -25,10 +27,9 @@
         <!-- Navigation Links -->
         <nav class="hidden md:flex space-x-6">
             <a href="index.jsp" class="hover:text-gray-300"><i class="fas fa-home"></i> Home</a>
-            <a href="registerUser.jsp" class="hover:text-gray-300"><i class="fas fa-user-plus"></i> Register</a>
+            <a href="pages/register.jsp" class="hover:text-gray-300"><i class="fas fa-user-plus"></i> Register</a>
             <a href="login.jsp" class="hover:text-gray-300"><i class="fas fa-sign-in-alt"></i> Login</a>
-            <a href="dashboard.jsp" class="hover:text-gray-300"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
-            <a href="logout.jsp" class="hover:text-gray-300"><i class="fas fa-sign-out-alt"></i> Logout</a>
+
         </nav>
 
         <!-- Mobile Menu Button -->
@@ -40,10 +41,9 @@
     <!-- Mobile Menu (Hidden by Default) -->
     <nav id="mobile-menu" class="hidden md:hidden bg-blue-700 text-center p-2">
         <a href="index.jsp" class="block py-2 hover:bg-blue-500"><i class="fas fa-home"></i> Home</a>
-        <a href="registerUser.jsp" class="block py-2 hover:bg-blue-500"><i class="fas fa-user-plus"></i> Register</a>
+        <a href="pages/register.jsp" class="block py-2 hover:bg-blue-500"><i class="fas fa-user-plus"></i> Register</a>
         <a href="login.jsp" class="block py-2 hover:bg-blue-500"><i class="fas fa-sign-in-alt"></i> Login</a>
-        <a href="dashboard.jsp" class="block py-2 hover:bg-blue-500"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
-        <a href="logout.jsp" class="block py-2 hover:bg-blue-500"><i class="fas fa-sign-out-alt"></i> Logout</a>
+
     </nav>
 </header>
 
