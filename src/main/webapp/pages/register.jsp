@@ -4,6 +4,7 @@
     <div class="bg-white p-8 rounded-lg shadow-lg w-96">
         <h2 class="text-2xl font-bold text-center text-gray-700">User Registration</h2>
 
+
         <form action="/register" method="post" class="mt-4 space-y-4">
             <!-- Full Name -->
             <div>
@@ -69,6 +70,10 @@
             <!-- Submit Button -->
             <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Register</button>
         </form>
+
+        <div class="text-center mt-2">
+            <a href="login.jsp" class="text-blue-600 hover:underline">Login</a>
+        </div>
     </div>
 </div>
 

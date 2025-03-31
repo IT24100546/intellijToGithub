@@ -1,25 +1,43 @@
-<%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <%@ include file="../header.jsp" %>
 
-<div style="background-image: url('../images/parking3.jpg'); background-size: cover; background-position: center; background-attachment: fixed;" class="flex items-center justify-center min-h-screen bg-gray-100">
-    <div class="bg-white p-8 rounded-lg shadow-lg w-96">
-        <h2 class="text-3xl font-semibold text-center text-gray-700 mb-8">User Login</h2>
+<style>
+    body {
+        background: url('<%= request.getContextPath() %>/images/parking3.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+</style>
 
-        <form action="login" method="post">
-            <div class="mb-6">
-                <label class="block text-xl text-gray-700 mb-2">Username:</label>
-                <input type="text" name="username" required class="w-full p-4 text-lg rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500 transition duration-300">
+<div class="flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-96 bg-opacity-90">
+        <h2 class="text-2xl font-bold text-center text-gray-700">User Login</h2>
+
+        <form action="/login" method="post" class="mt-4 space-y-4">
+            <!-- Email or Username -->
+            <div>
+                <label class="block text-gray-600 text-sm font-semibold mb-1" for="email_or_username">Email or Username</label>
+                <input type="text" id="email_or_username" name="email_or_username"
+                       class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-300 outline-none" required>
             </div>
 
-            <div class="mb-6">
-                <label class="block text-xl text-gray-700 mb-2">Password:</label>
-                <input type="password" name="password" required class="w-full p-4 text-lg rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500 transition duration-300">
+            <!-- Password -->
+            <div>
+                <label class="block text-gray-600 text-sm font-semibold mb-1" for="password">Password</label>
+                <input type="password" id="password" name="password"
+                       class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-300 outline-none" required>
             </div>
 
-            <button type="submit" class="w-full p-4 text-xl font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300">Login</button>
+            <!-- Submit Button -->
+            <button type="submit"
+                    class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                Login
+            </button>
+
+            <!-- Forgot Password Link -->
+            <div class="text-center mt-2">
+                <a href="forgot-password.jsp" class="text-blue-600 hover:underline">Forgot Password?</a>
+            </div>
         </form>
     </div>
 </div>
 
 <%@ include file="../footer.jsp" %>
-
